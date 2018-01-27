@@ -20,7 +20,7 @@ keepalived主要有三个模块，分别是core、check和vrrp。core模块为ke
 #### 1、yum install -y openssl-devel popt-devel
 
 #### 2、编译
-wget http://192.168.70.56/mysql/downloads/tools/keepalived-1.2.13.tar.gz
+wget http://www.keepalived.org/software/keepalived-1.2.13.tar.gz
 tar zxvf keepalived-1.2.13.tar.gz 
 cd keepalived-1.2.13
 ./configure --prefix=/usr/local/keepalived
