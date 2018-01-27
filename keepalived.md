@@ -1,6 +1,6 @@
 # keepalived 
 
-## 什么是keepalived的？
+## 什么是keepalived？
 Keepalived是一个用C语言编写的路由软件。该项目的主要目标是为Linux系统和基于Linux的基础设施提供简单而强大的负载均衡和高可用性设施。Loadbalancing框架依赖于众所周知的广泛使用的Linux虚拟服务器（IPVS） 内核模块来提供Layer4负载平衡。Keepalived实现了一组检查器，根据其健康动态地自适应维护和管理负载均衡服务器池。另一方面，VRRP实现高可用性 协议。VRRP是路由器故障转移的根本障碍。另外，Keepalived在VRRP有限状态机上实现了一系列钩子，提供低级和高速的协议交互。Keepalived框架可以独立使用，也可以一起使用，以提供弹性基础设施。
 （来源：[keepalived官网](http://www.keepalived.org)）
 
@@ -17,9 +17,9 @@ keepalived主要有三个模块，分别是core、check和vrrp。core模块为ke
  keepalived源码包下载地址：http://www.keepalived.org/download.html
 由于Keepalived官方不提供任何Linux发行包，只提供源代码和代码库，所有需要编译安装(当然yum、apt-get 也有提供源)。
 
-####1、yum install -y openssl-devel popt-devel
+#### 1、yum install -y openssl-devel popt-devel
 
-####2、编译
+#### 2、编译
 wget http://192.168.70.56/mysql/downloads/tools/keepalived-1.2.13.tar.gz
 tar zxvf keepalived-1.2.13.tar.gz 
 cd keepalived-1.2.13
@@ -29,7 +29,7 @@ make && make install
 注意：如果多处安装，可以打包可执行文件到新环境直接安装。
 cd /usr/local/ && tar zcvf keepalived-bin-1.2.13.tar.gz ./keepalived
 
-####3、安装
+#### 3、安装
 ```
 #! /bin/bash
 wget http://192.168.70.56/keepalived/keepalived-bin-1.2.13.tar.gz
@@ -46,7 +46,7 @@ echo "net.ipv4.ip_nonlocal_bind = 1" >> /etc/sysctl.conf
 sysctl -p /etc/sysctl.conf
 ```
 
-####4、配置
+#### 4、配置
 ```
 echo "
 ! Configuration File for keepalived
@@ -87,7 +87,7 @@ vrrp_instance VI_KA_1 {
 " >/etc/keepalived/keepalived.conf
 ```
 #### 5.测试
- 注意：防火墙一定要开启 vrrp协议的支持，（112）
+ 注意：防火墙一定要开启 vrrp协议的支持，（端口 112）
 
 
 ## keepalived命令行参数：
