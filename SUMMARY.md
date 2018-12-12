@@ -4,5 +4,4 @@
 * [First Chapter](chapter1.md)
 * [20181106](20181106.md)
 * [deploy-fast](deploy-fast.md)
-* [压测分析](ya-ce-fen-xi.md)
 
