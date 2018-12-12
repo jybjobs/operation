@@ -30,7 +30,7 @@
 
 条件二： 并发300, 节点 2
 
-> 测试环境： 平均 qps 310 ，最大qps为 50000/60s=830+  r/s    ![](/assets/cat300-1.png)![](/assets/cat300-2.png)
+> 测试环境： 平均 qps 310 ，最大qps为 25000/60s=830+  r/s    ![](/assets/cat300-1.png)![](/assets/cat300-2.png)
 >
 > 生产环境：平均qps 290, 最大qps 20000/10=2000 r/s![](/assets/cat300-p1.png)![](/assets/cat300-p2.png)
 
