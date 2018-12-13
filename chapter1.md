@@ -34,7 +34,7 @@
 
 条件三：并发 400 ，节点 2
 
-> 平均qps420 ，最大qps 30000/60=500 r/s![](/assets/cat400-2.png)![](/assets/cat400-03.png)
+> 平均qps420 ，最大qps 30000/60=500 r/s![](/assets/cat400-2.png)![](/assets/cat400-03.png)![](/assets/jmx400-1.png)
 
 #### 5. 生产对比
 
