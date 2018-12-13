@@ -31,16 +31,18 @@
 条件二： 并发300, 节点 2
 
 > 测试环境： 平均 qps 310 ，最大qps为 25000/60s=410+  r/s    ![](/assets/cat300-1.png)![](/assets/cat300-2.png)
->
-> 生产环境：平均qps 290, 最大qps 20000/60=330 r/s![](/assets/cat300-p1.png)![](/assets/cat300-p2.png)
 
 条件三：并发 400 ，节点 2
 
 > 平均qps420 ，最大qps 30000/60=500 r/s![](/assets/cat400-2.png)![](/assets/cat400-03.png)
 
-#### 5. 分析
+#### 5. 生产对比
 
-#### 6. 结论
+生产环境：平均qps 290, 最大qps 20000/60=330 r/s![](/assets/cat300-p1.png)![](/assets/cat300-p2.png)
+
+#### 6. 分析
+
+#### 7. 结论
 
 
 
